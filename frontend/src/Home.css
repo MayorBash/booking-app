@@ -1,0 +1,33 @@
+/* BoxLink.css */
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;  /* Space between the boxes */
+    flex-wrap: wrap;  /* Allows wrapping on smaller screens */
+}
+
+.box {
+    background-color:blue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 200px;  /* Fixed width for the boxes */
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.box:hover {
+    background-color: #45a049;
+    transform: scale(1.05);  /* Slightly enlarge on hover */
+}
+
+.box h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.box p {
+    font-size: 1rem;
+}

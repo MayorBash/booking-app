@@ -1,0 +1,19 @@
+@media print {
+    /* Hide the print button when printing */
+    #printButton {
+        display: none;
+    }
+
+    /* Make sure the content you want printed is visible */
+    body * {
+        visibility: hidden;
+    }
+    .card, .card * {
+        visibility: visible;
+    }
+    .card {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}

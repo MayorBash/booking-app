@@ -1,0 +1,21 @@
+@media print {
+    table {
+        display: table !important;
+    }
+    button {
+        display: none; /* Hide buttons during printing */
+    }
+
+    body * {
+        visibility: hidden; /* Hide everything */
+    }
+    #reportTable, #reportTable * {
+        visibility: visible; /* Show table */
+    }
+    #reportTable {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+

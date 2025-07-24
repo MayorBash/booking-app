@@ -1,0 +1,76 @@
+.seats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.seat-btn {
+    padding: 10px;
+    width: 40px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+}
+
+.reserved {
+    background-color: red !important;
+    cursor: not-allowed;
+}
+
+.selected {
+    background-color: blue !important;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    .ticket, .ticket * {
+        visibility: visible;
+    }
+
+    .ticket {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    /* Hide the print button during printing */
+    .ticket button {
+        display: none;
+    }
+
+    /* Optional: Add some padding/margin to adjust layout */
+    .ticket {
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+    .ticket p {
+            font-size: 16px;
+        }
+    
+        .ticket p strong {
+            font-weight: bold;
+        }
+    
+        /* Optional: Adjust Name styling */
+        .ticket p:first-child {
+            font-size: 18px; /* Make name larger */
+            font-weight: bold;
+        }
+    
+    
+}
+
+
